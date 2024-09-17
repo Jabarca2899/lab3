@@ -3,17 +3,16 @@
 
 int main() {
 
-    int v;
+    int v, w;
 
-    // Llama a las 3 funciones
+    // Llama a las funciones
     funcion1();
     funcion2(5, 2.67);
     v = funcion3(10);
+    w = funcion4(2);
 
     // Imprime el valor que retornó funcion3()
     printf("v = %d\n", v);
-
-    w = funcion4(2);
 
     // Imprime el valor que retornó funcion4()
     printf("w = %d\n", w);
