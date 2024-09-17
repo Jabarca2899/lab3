@@ -3,23 +3,23 @@
 
 int main() {
 
-    int v, w;
+    int v, w, t;
 
     // Llama a las funciones
     funcion1();
     funcion2(5, 2.67);
     v = funcion3(10);
     w = funcion4(2);
-
+    t = funcion5(10);
     // Imprime el valor que retornó funcion3()
     printf("v = %d\n", v);
 
     // Imprime el valor que retornó funcion4()
     printf("w = %d\n", w);
-
-
+    
+    // Imprime el valor que retornó funcion5()
+    printf("t = %d\n", t);
     return 0;
-
 }
 
 // funcion1(): Imprime un mensaje
@@ -43,14 +43,22 @@ int funcion3(int x) {
 
 // funcion4(): Imprime un mensaje. Retorna el valor que recibió como argumento
 // reducido en 2
-int funcion3(int x) {
+int funcion4(int x) {
     printf("En funcion4()...\n");
     int y = x - 2;
     return y;
 }
 
+// funcion5(): Imprime un mensaje. Retorna el valor que recibió como argumento
+// incrementado en 10
+>>>>>>> feature-branch
 int funcion5(int x) {
-    printf("en funcion5");
+    printf("En funcion5()...\n");
+    int y = x + 10;
+    return y;
+}
+
+
 int funcion4(int x) {
     printf("En funcion4()");
     return x;
